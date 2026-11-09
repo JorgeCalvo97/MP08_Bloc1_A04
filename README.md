@@ -1,17 +1,43 @@
-# myhelloworld
+# MP08_Bloc1_A04 – Hola mundo
 
-A new Flutter project.
+## Descripción
 
-## Getting Started
+He creado una aplicación sencilla con **Flutter y Dart** a partir del ejemplo facilitado por el profesor. La aplicación muestra un mensaje de bienvenida centrado en la pantalla:
 
-This project is a starting point for a Flutter application.
+> Hola a todos, me llamo Jorge Calvo, y este es mi Hello World
 
-A few resources to get you started if this is your first Flutter project:
+El proyecto Flutter se llama `myhelloworld`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Estructura principal
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `lib/main.dart`: punto de entrada de la aplicación y definición de la interfaz.
+- `test/widget_test.dart`: prueba automática que comprueba que el mensaje de bienvenida aparece exactamente una vez.
+- `pubspec.yaml`: configuración y dependencias del proyecto Flutter.
+
+La interfaz utiliza los widgets `MaterialApp`, `Scaffold`, `Center` y `Text`. Como el contenido es fijo, la clase principal hereda de `StatelessWidget`.
+
+## Ejecución
+
+Con Flutter instalado, abre una terminal en la carpeta del proyecto y ejecuta:
+
+```bash
+flutter pub get
+flutter run
+```
+
+Selecciona uno de los dispositivos disponibles cuando Flutter lo solicite.
+
+## Pruebas
+
+Para ejecutar la prueba automática:
+
+```bash
+flutter test
+```
+
+El test comprueba que el texto de bienvenida está presente en la interfaz.
+
+## Autor
+
+Jorge Calvo
+
